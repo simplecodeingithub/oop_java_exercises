@@ -8,14 +8,14 @@ public class CatTest {
     @Test
     public void checkCatIsAwake() {
         Cat domesticCat = new DomesticCat();
-        assertFalse("Cat should be awake by default", domesticCat.isAsleep());
+        assertFalse(domesticCat.isAsleep(), "Cat should be awake by default");
     }
 
     @Test
     public void checkCatCanGoToSleep() {
         Cat domesticCat = new DomesticCat();
         domesticCat.goToSleep();
-        assertTrue("Cat should be snoozing", domesticCat.isAsleep());
+        assertTrue(domesticCat.isAsleep(), "Cat should be snoozing");
     }
 
     @Test
@@ -23,7 +23,7 @@ public class CatTest {
         Cat domesticCat = new DomesticCat();
         domesticCat.goToSleep();
         domesticCat.wakeUp();
-        assertFalse("Cat should be awake now", domesticCat.isAsleep());
+        assertFalse(domesticCat.isAsleep(), "Cat should be awake now");
     }
 
     @Test
@@ -40,14 +40,14 @@ public class CatTest {
 
     @Test
     public void checkLionHeight() {
-        Cat lionCat = new LionCat();
+        Cat lionCat = new LionCat(1100,"wild");
         assertEquals(1100, lionCat.getAverageHeight());
     }
 
 
     @Test
     public void feedTheLion() {
-        Cat lionCat = new LionCat();
+        Cat lionCat = new LionCat(20.0,"wild");
         assertEquals("Roar!!!!", lionCat.eat());
     }
 
