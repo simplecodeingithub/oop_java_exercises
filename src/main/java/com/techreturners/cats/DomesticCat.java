@@ -26,7 +26,7 @@ public class DomesticCat extends AbstractCat{
     }
 
     @Override
-    public double getAverageHeight() {
+    public int getAverageHeight() {
         return averageHeight;
     }
 

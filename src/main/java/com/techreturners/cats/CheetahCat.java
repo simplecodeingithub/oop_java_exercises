@@ -15,7 +15,7 @@ public class CheetahCat extends AbstractCat{
         return null;
     }
     @Override
-    public double getAverageHeight() {
+    public int getAverageHeight() {
         return 0;
     }
     @Override

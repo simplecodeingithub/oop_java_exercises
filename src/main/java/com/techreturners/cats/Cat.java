@@ -5,7 +5,7 @@ interface Cat {
     void goToSleep();
     void wakeUp();
     String getSetting();
-    double getAverageHeight();
+    int getAverageHeight();
     String eat();
 
 }

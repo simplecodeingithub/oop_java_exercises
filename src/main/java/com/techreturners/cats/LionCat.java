@@ -1,11 +1,11 @@
 package com.techreturners.cats;
 
 public class LionCat extends AbstractCat{
-    private double averageHeight;
+    private int averageHeight;
     private String setting;
 
 
-    public LionCat(double averageHeight,String setting) {
+    public LionCat(int averageHeight,String setting) {
         this.averageHeight = averageHeight;
         this.setting=setting;
     }
@@ -31,7 +31,7 @@ public class LionCat extends AbstractCat{
     }
 
     @Override
-    public double getAverageHeight() {
+    public int getAverageHeight() {
         return averageHeight;
     }
     public String eat(){
